@@ -1,0 +1,119 @@
+:root{
+    --primary-color:#215728;
+    --secondary-color: #a8dbaf;
+    --nav-color:#728674;
+    --white:#fffff2;
+    --off-white:#f2f2f2;
+    --primary-text-color:#0f0f0f;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+}
+
+header{
+    
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size:2.5em;
+    font-weight: bolder;
+    padding: 20px;
+    color: var(--off-white);
+    background-color: var(--primary-color);
+}
+
+
+nav ul{
+        background-color:  var(--nav-color);
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        list-style: none;
+        text-align: center;
+    }
+
+@media (max-width:479px){
+    nav ul{
+            display: block;
+        }
+    }
+    
+
+nav ul li {
+    padding: 20px;
+    border-right:solid 1px var(--white);
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: #57775a;
+}
+
+nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main{
+    background-color: var(--white);
+    width: 75%;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+#main-heading{
+    padding: 20px;
+}
+
+#main-heading h2{
+    font-size: 1.8em;
+    margin: 20px 0px;
+    text-align: center;
+    color: purple;
+}
+
+#main-heading h3{
+    font-size: 1.5em;
+    color: blue;
+}
+
+article h3{
+    padding: 10px 20px;
+    margin: 10px 0px;
+    color: red;
+}
+
+article p{
+    padding: 10px 20px;
+    margin: 10px 0px;
+    color:var(--primary-text-color);
+}
+
+#divide-section{
+    width: 50%;
+    margin: 0px auto;
+    background-color: purple;
+    height: 4px;
+}
+
+footer{
+    background-color:var(--primary-color)
+;}
+
+footer p{
+    text-align: center;
+    color: var(--off-white);
+}
